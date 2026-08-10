@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS.</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="curd">
+<div class="head">
+    <h2>CRUDS</h2>
+    <p>PRODUCT MANAGEMENT SYSTEM</p>
+</div>
+<div class="inputs">
+    <input placeholder="Title" type="text" id="title">
+    <div class="price">
+        <input onkeyup="getTotal()" type="number" id="price" placeholder="Price">
+        <input onkeyup="getTotal()"type="number" id="taxes" placeholder="Taxes">
+        <input onkeyup="getTotal()" type="number" id="ads" placeholder="ADS">
+        <input onkeyup="getTotal()" type="number" id="discount" placeholder="Discount">
+        <small id="Total"></small>
+        </div>
+        <div class="counts">
+        <input type="number" id="count" placeholder="Count">
+        <input type="text" id="category" placeholder="Category">
+        <button id="submit">Create</button>
+        </div>
+</div>
+<div class="outputs">
+
+    <div class="searchBlock">
+        <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+
+        <div class="btnSearch">
+            <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+            <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+        </div>
+    </div>
+    <div onclick="deleteAll()" class="deleteAll">Delete All</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Taxes</th>
+                <th>Ads</th>
+                <th>Discount</th>
+                <th>Total</th>
+                <th>Category</th>
+                <th>Count</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+
+</div>
+
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

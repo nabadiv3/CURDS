@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #0F0F14;
+        color: #F4F1EA;
+   font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+.curd{
+width: 80%;
+margin:auto ;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 10px 0;
+
+    background: #181820;
+    color: #F4F1EA;
+
+    border: 1px solid #2A2A35;
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #8E8B98;
+}
+
+input:focus {
+    border-color: #A855F7;
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+    background: #1C1B25;
+}
+.price {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.price input {
+    flex: 1;
+    width: 0;
+    box-sizing: border-box;
+}
+
+#Total {
+    flex: 0 0 100px;
+    width: 100px;
+    box-sizing: border-box;
+
+    padding: 14px 10px;
+
+    background: #181820;
+    color: #F4F1EA;
+
+    border: 1px solid #2A2A35;
+    border-left: 4px solid #A855F7;
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+#Total::before {
+    content: "Total:";
+    color: #A855F7;
+    font-size: 13px;
+    font-weight: 600;
+}
+#Total:hover {
+    background: #221A2D;
+    border-color: #A855F7;
+    border-left-color: #C084FC;
+    box-shadow: 0 5px 20px rgba(168, 85, 247, 0.25);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+.counts {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.counts input {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+#submit {
+    width: 50%;
+    padding: 16px 20px;
+    cursor: pointer;
+
+    background: #A855F7;
+    color: #F4F1EA;
+
+    border: none;
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.outputs {
+    margin-top: 20px;
+}
+
+.searchBlock {
+    width: 100%;
+}
+
+.btnSearch {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.btnSearch button {
+    flex: 1;
+    padding: 14px 18px;
+
+    background: #181820;
+    color: #F4F1EA;
+
+    border: 1px solid #2A2A35;
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnSearch button:hover {
+    background: #221A2D;
+    border-color: #A855F7;
+    color: #C084FC;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 20px rgba(168, 85, 247, 0.25);
+}
+
+ 
+
+ table {
+     width: 100%;
+     text-align: center;
+     margin-top: 30px;
+     border-collapse: separate;
+     border-spacing: 0;
+
+     background: #14141B;
+     color: #F4F1EA;
+
+     border: 1px solid #2A2A35;
+     border-radius: 14px;
+     overflow: hidden;
+
+     font-family: "Poppins", sans-serif;
+ }
+
+ 
+
+ table thead {
+     background: #1D1B26;
+ }
+
+ table th {
+     padding: 16px 12px;
+
+     color: #C084FC;
+     font-size: 13px;
+     font-weight: 600;
+
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+
+     border-bottom: 1px solid #2A2A35;
+ }
+
+
+ table td {
+     padding: 15px 12px;
+
+     font-size: 14px;
+
+     border-bottom: 1px solid #24242D;
+ }
+
+ 
+
+ table tbody tr:last-child td {
+     border-bottom: none;
+ }
+
+ 
+
+ table tbody tr {
+     transition: 0.25s ease;
+ }
+
+ table tbody tr:hover {
+     background: #1D1A25;
+ }
+
+
+ table td:nth-child(7) {
+     color: #C084FC;
+     font-weight: 600;
+ }
+
+ 
+
+ table td:first-child {
+     color: #8E8B98;
+     font-weight: 500;
+ }
+
+ 
+
+ table td:nth-child(8) {
+     color: #BDB8C8;
+ }
+
+ table button {
+     border: none;
+     padding: 8px 14px;
+
+     border-radius: 8px;
+
+     font-family: "Poppins", sans-serif;
+     font-size: 12px;
+     font-weight: 600;
+
+     cursor: pointer;
+
+     transition: 0.25s ease;
+ }
+
+ .update {
+     background: #A855F7;
+     color: #FFFFFF;
+ }
+
+ .update:hover {
+     background: #C084FC;
+     box-shadow: 0 5px 15px rgba(168, 85, 247, 0.25);
+     transform: translateY(-2px);
+ }
+
+.deleteAll {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px 18px;
+    box-sizing: border-box;
+
+    background: #181820;
+    color: #C084FC;
+
+    border: 1px solid #3A3045;
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    text-align: center;
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.deleteAll:hover {
+    background: #A855F7;
+    color: #FFFFFF;
+    border-color: #A855F7;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 20px rgba(168, 85, 247, 0.25);
+}
+
+
+
+@media (max-width: 600px) {
+
+    table thead {
+        display: none;
+    }
+
+    table,
+    table tbody,
+    table tr,
+    table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    table {
+        min-width: 0;
+        border: none;
+        background: transparent;
+        margin-top: 20px;
+    }
+
+    table tbody tr {
+        background: #181820;
+        border: 1px solid #2A2A35;
+        border-radius: 14px;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    table tbody tr:hover {
+        background: #1D1A25;
+    }
+
+    table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 10px 5px;
+        border-bottom: 1px solid #2A2A35;
+
+        font-size: 13px;
+        text-align: right;
+    }
+
+    table td:last-child {
+        border-bottom: none;
+    }
+
+    table td:nth-child(1)::before {
+        content: "ID";
+    }
+
+    table td:nth-child(2)::before {
+        content: "Title";
+    }
+
+    table td:nth-child(3)::before {
+        content: "Price";
+    }
+
+    table td:nth-child(4)::before {
+        content: "Taxes";
+    }
+
+    table td:nth-child(5)::before {
+        content: "Ads";
+    }
+
+    table td:nth-child(6)::before {
+        content: "Discount";
+    }
+
+    table td:nth-child(7)::before {
+        content: "Total";
+    }
+
+    table td:nth-child(8)::before {
+        content: "Category";
+    }
+
+    table td:nth-child(9)::before {
+        content: "Count";
+    }
+
+    table td:nth-child(10)::before {
+        content: "Update";
+    }
+
+    table td:nth-child(11)::before {
+        content: "Delete";
+    }
+
+    table td::before {
+        color: #C084FC;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    table td:nth-child(10),
+    table td:nth-child(11) {
+        justify-content: center;
+        gap: 10px;
+        border-bottom: none;
+        padding-top: 12px;
+    }
+
+    table td:nth-child(10)::before,
+    table td:nth-child(11)::before {
+        display: none;
+    }
+
+    table button {
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+}
