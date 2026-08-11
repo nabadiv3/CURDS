@@ -317,6 +317,7 @@ input:focus {
         font-size: 24px;
     }
 
+    /* INPUTS */
     input {
         width: 100%;
         box-sizing: border-box;
@@ -324,56 +325,74 @@ input:focus {
         font-size: 14px;
     }
 
+    /* PRICE */
     .price {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
     }
 
     .price input {
         width: 100%;
+        min-width: 0;
     }
 
     #Total {
         width: 100%;
+        min-width: 0;
         padding: 12px 5px;
         font-size: 13px;
     }
 
+    /* COUNTS */
     .counts {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5px;
+        gap: 6px;
     }
 
+    .counts input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* SUBMIT */
     #submit {
         width: 100%;
         padding: 13px;
         font-size: 14px;
     }
 
+    /* SEARCH */
     .searchBlock {
         margin-top: 20px;
     }
 
     .btnSearch {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
     }
 
     .btnSearch button {
         width: 100%;
-        padding: 12px;
-        font-size: 13px;
+        padding: 12px 5px;
+        font-size: 12px;
     }
 
+    /* DELETE ALL */
     .deleteAll {
         padding: 12px;
         font-size: 14px;
     }
 
-    /* تحويل الجدول إلى بطاقات */
+    /* TABLE */
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+        background: transparent;
+    }
 
     table thead {
         display: none;
@@ -388,34 +407,37 @@ input:focus {
         box-sizing: border-box;
     }
 
-    table {
-        min-width: 0;
-        border: none;
-        background: transparent;
-        margin-top: 20px;
-    }
-
+    /* CARD */
     table tbody tr {
         background: #181820;
         border: 1px solid #2A2A35;
         border-radius: 14px;
         margin-bottom: 15px;
-        padding: 10px;
+        padding: 8px 12px;
     }
 
+    /* ROW */
     table td {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 5px;
+
+        padding: 10px 0;
+
         font-size: 13px;
         border-bottom: 1px solid #2A2A35;
+
+        min-width: 0;
+        word-break: break-word;
     }
 
+    /* LABEL */
     table td::before {
         color: #C084FC;
         font-weight: 600;
         font-size: 12px;
+        margin-right: 10px;
+        flex-shrink: 0;
     }
 
     table td:nth-child(1)::before {
@@ -454,11 +476,12 @@ input:focus {
         content: "Count";
     }
 
+    /* UPDATE + DELETE */
     table td:nth-child(10),
     table td:nth-child(11) {
         justify-content: center;
         border-bottom: none;
-        gap: 10px;
+        padding: 8px 0;
     }
 
     table td:nth-child(10)::before,
@@ -471,6 +494,7 @@ input:focus {
         padding: 10px;
     }
 }
+
 
 
 
