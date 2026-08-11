@@ -292,44 +292,27 @@ input:focus {
 
     transition: 0.25s ease;
 }
-
-.deleteAll:hover {
-    background: #A855F7;
-    color: #FFFFFF;
-    border-color: #A855F7;
-
-    transform: translateY(-2px);
-
-    box-shadow: 0 5px 20px rgba(168, 85, 247, 0.25);
-}
 @media screen and (max-width: 600px) {
 
     .curd {
-        width: 92%;
+        width: 94%;
         margin: auto;
-    }
-
-    .head {
-        margin: 15px 0;
     }
 
     .head h2 {
         font-size: 24px;
     }
 
-    /* INPUTS */
     input {
-        width: 100%;
         box-sizing: border-box;
+        width: 100%;
         padding: 12px 14px;
-        font-size: 14px;
     }
 
-    /* PRICE */
     .price {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 6px;
+        gap: 5px;
     }
 
     .price input {
@@ -340,163 +323,73 @@ input:focus {
     #Total {
         width: 100%;
         min-width: 0;
+        box-sizing: border-box;
         padding: 12px 5px;
         font-size: 13px;
     }
 
-    /* COUNTS */
     .counts {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 6px;
+        gap: 5px;
     }
 
-    .counts input {
-        width: 100%;
-        min-width: 0;
-    }
-
-    /* SUBMIT */
     #submit {
         width: 100%;
         padding: 13px;
-        font-size: 14px;
-    }
-
-    /* SEARCH */
-    .searchBlock {
-        margin-top: 20px;
     }
 
     .btnSearch {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 6px;
+        display: flex;
+        gap: 5px;
     }
 
     .btnSearch button {
-        width: 100%;
         padding: 12px 5px;
         font-size: 12px;
     }
 
-    /* DELETE ALL */
     .deleteAll {
         padding: 12px;
         font-size: 14px;
     }
 
-    /* TABLE */
+    /* الجدول يبقى مثل الكمبيوتر */
     table {
+        display: block;
         width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
         margin-top: 20px;
-        border: none;
-        background: transparent;
     }
 
     table thead {
-        display: none;
+        display: table-header-group;
     }
 
-    table,
-    table tbody,
-    table tr,
+    table tbody {
+        display: table-row-group;
+    }
+
+    table tr {
+        display: table-row;
+    }
+
+    table th,
     table td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* CARD */
-    table tbody tr {
-        background: #181820;
-        border: 1px solid #2A2A35;
-        border-radius: 14px;
-        margin-bottom: 15px;
-        padding: 8px 12px;
-    }
-
-    /* ROW */
-    table td {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 10px 0;
-
-        font-size: 13px;
-        border-bottom: 1px solid #2A2A35;
-
-        min-width: 0;
-        word-break: break-word;
-    }
-
-    /* LABEL */
-    table td::before {
-        color: #C084FC;
-        font-weight: 600;
+        display: table-cell;
+        padding: 12px 10px;
         font-size: 12px;
-        margin-right: 10px;
-        flex-shrink: 0;
     }
 
-    table td:nth-child(1)::before {
-        content: "ID";
-    }
-
-    table td:nth-child(2)::before {
-        content: "Title";
-    }
-
-    table td:nth-child(3)::before {
-        content: "Price";
-    }
-
-    table td:nth-child(4)::before {
-        content: "Taxes";
-    }
-
-    table td:nth-child(5)::before {
-        content: "Ads";
-    }
-
-    table td:nth-child(6)::before {
-        content: "Discount";
-    }
-
-    table td:nth-child(7)::before {
-        content: "Total";
-    }
-
-    table td:nth-child(8)::before {
-        content: "Category";
-    }
-
-    table td:nth-child(9)::before {
-        content: "Count";
-    }
-
-    /* UPDATE + DELETE */
-    table td:nth-child(10),
-    table td:nth-child(11) {
-        justify-content: center;
-        border-bottom: none;
-        padding: 8px 0;
-    }
-
-    table td:nth-child(10)::before,
-    table td:nth-child(11)::before {
-        display: none;
+    table th {
+        font-size: 11px;
     }
 
     table button {
-        width: 100%;
-        padding: 10px;
+        padding: 7px 10px;
+        font-size: 11px;
     }
 }
-
-
-
-
         
 
