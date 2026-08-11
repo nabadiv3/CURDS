@@ -302,10 +302,78 @@ input:focus {
 
     box-shadow: 0 5px 20px rgba(168, 85, 247, 0.25);
 }
+@media screen and (max-width: 600px) {
 
+    .curd {
+        width: 92%;
+        margin: auto;
+    }
 
+    .head {
+        margin: 15px 0;
+    }
 
-@media (max-width: 600px) {
+    .head h2 {
+        font-size: 24px;
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .price {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .price input {
+        width: 100%;
+    }
+
+    #Total {
+        width: 100%;
+        padding: 12px 5px;
+        font-size: 13px;
+    }
+
+    .counts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+
+    #submit {
+        width: 100%;
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    .searchBlock {
+        margin-top: 20px;
+    }
+
+    .btnSearch {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btnSearch button {
+        width: 100%;
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .deleteAll {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* تحويل الجدول إلى بطاقات */
 
     table thead {
         display: none;
@@ -333,27 +401,21 @@ input:focus {
         border-radius: 14px;
         margin-bottom: 15px;
         padding: 10px;
-        box-sizing: border-box;
-    }
-
-    table tbody tr:hover {
-        background: #1D1A25;
     }
 
     table td {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         padding: 10px 5px;
-        border-bottom: 1px solid #2A2A35;
-
         font-size: 13px;
-        text-align: right;
+        border-bottom: 1px solid #2A2A35;
     }
 
-    table td:last-child {
-        border-bottom: none;
+    table td::before {
+        color: #C084FC;
+        font-weight: 600;
+        font-size: 12px;
     }
 
     table td:nth-child(1)::before {
@@ -392,26 +454,11 @@ input:focus {
         content: "Count";
     }
 
-    table td:nth-child(10)::before {
-        content: "Update";
-    }
-
-    table td:nth-child(11)::before {
-        content: "Delete";
-    }
-
-    table td::before {
-        color: #C084FC;
-        font-weight: 600;
-        font-size: 12px;
-    }
-
     table td:nth-child(10),
     table td:nth-child(11) {
         justify-content: center;
-        gap: 10px;
         border-bottom: none;
-        padding-top: 12px;
+        gap: 10px;
     }
 
     table td:nth-child(10)::before,
@@ -422,6 +469,10 @@ input:focus {
     table button {
         width: 100%;
         padding: 10px;
-        font-size: 13px;
     }
 }
+
+
+
+        
+
